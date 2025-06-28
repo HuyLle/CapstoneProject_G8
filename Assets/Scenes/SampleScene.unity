@@ -141,7 +141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4589716710238282923, guid: 8900587e5438b6c419d961e0996c83b7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.29
+      value: -3.9
       objectReference: {fileID: 0}
     - target: {fileID: 4589716710238282923, guid: 8900587e5438b6c419d961e0996c83b7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -176,6 +176,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8900587e5438b6c419d961e0996c83b7, type: 3}
+--- !u!1001 &180733388
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3812876574508226176, guid: 32a0b11518fbe334e876e7a8945152c3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.09538907
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812876574508226176, guid: 32a0b11518fbe334e876e7a8945152c3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812876574508226176, guid: 32a0b11518fbe334e876e7a8945152c3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.7639141
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812876574508226176, guid: 32a0b11518fbe334e876e7a8945152c3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812876574508226176, guid: 32a0b11518fbe334e876e7a8945152c3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812876574508226176, guid: 32a0b11518fbe334e876e7a8945152c3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812876574508226176, guid: 32a0b11518fbe334e876e7a8945152c3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812876574508226176, guid: 32a0b11518fbe334e876e7a8945152c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812876574508226176, guid: 32a0b11518fbe334e876e7a8945152c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812876574508226176, guid: 32a0b11518fbe334e876e7a8945152c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812876574508226177, guid: 32a0b11518fbe334e876e7a8945152c3, type: 3}
+      propertyPath: m_Name
+      value: CheeseBlock_Visual
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 32a0b11518fbe334e876e7a8945152c3, type: 3}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -659,3 +716,4 @@ SceneRoots:
   - {fileID: 577452923}
   - {fileID: 13435233}
   - {fileID: 2104151211}
+  - {fileID: 180733388}
