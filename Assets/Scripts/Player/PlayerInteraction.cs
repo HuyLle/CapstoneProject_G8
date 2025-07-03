@@ -6,7 +6,24 @@ public class PlayerInteraction : MonoBehaviour
     private GameObject highlightedObject = null; // Vật thể đang được highlight
     [SerializeField] private Transform holdPoint; // Điểm giữ vật thể
     [SerializeField] private float interactDistance = 1.5f; // Khoảng cách tương tác
+    [SerializeField] private Animator playerAnimator;
 
+    private void Start()
+    {
+        if (playerAnimator == null)
+        {
+            // lấy Animator từ GameObject này hoặc từ cha của nó
+            playerAnimator = GetComponent<Animator>();
+            if (playerAnimator == null)
+            {
+                playerAnimator = GetComponentInParent<Animator>();
+            }
+            if (playerAnimator == null)
+            {
+                Debug.LogError("Animator component not found on player or its parent. Please assign 'playerAnimator' in Inspector.");
+            }
+        }
+    }
     void Update()
     {
         UpdateHighlight();
@@ -105,6 +122,12 @@ public class PlayerInteraction : MonoBehaviour
             Station station = FindStationForItem(heldItem);
             if (station != null) station.ClearItem();
 
+            // Thêm Animation
+            if(playerAnimator != null)
+            {
+                playerAnimator.SetBool("IsHolding", true);
+            }
+
             Debug.Log(gameObject.name + " Picked up: " + heldItem.name);
         }
     }
@@ -135,6 +158,13 @@ public class PlayerInteraction : MonoBehaviour
                 if (highlight != null) highlight.Unhighlight();
                 heldItem = null;
                 highlightedObject = null;
+
+
+                // Thêm Animation
+                if (playerAnimator != null)
+                {
+                    playerAnimator.SetBool("IsHolding", false);
+                }
                 Debug.Log(gameObject.name + " Placed item on: " + station.name);
             }
         }
