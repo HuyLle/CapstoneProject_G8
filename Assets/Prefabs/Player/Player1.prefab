@@ -659,12 +659,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3515727208798578028}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0, y: 0.8941532, z: -3.0969408}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 3.133935, z: -0.93651843}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3223463018339955203}
+  m_Father: {fileID: 8795565462873478379}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &616193808496827257
 MeshFilter:
@@ -840,6 +840,7 @@ Transform:
   - {fileID: 518037944590463645}
   - {fileID: 2698457135225019269}
   - {fileID: 6646668776613475191}
+  - {fileID: 7097928650982386529}
   m_Father: {fileID: 3223463018339955203}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4825824514091558871
@@ -1376,7 +1377,6 @@ Transform:
   m_Children:
   - {fileID: 3580035700741884057}
   - {fileID: 8795565462873478379}
-  - {fileID: 7097928650982386529}
   - {fileID: 8470464056581502556}
   - {fileID: 6346621238318001412}
   - {fileID: 7821750942891688059}
@@ -1482,6 +1482,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   holdPoint: {fileID: 3580035700741884057}
   interactDistance: 1.5
+  playerAnimator: {fileID: 0}
 --- !u!114 &3810807001801000206
 MonoBehaviour:
   m_ObjectHideFlags: 0
