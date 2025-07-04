@@ -22,12 +22,12 @@ AnimationClip:
     curve:
     - time: 0
       value: {fileID: 21300000, guid: cccee1426e575ad45a4750780979c132, type: 3}
-    - time: 0.31666666
+    - time: 0.33333334
       value: {fileID: 21300000, guid: 29e7d78c46e3a3344b084063a4289234, type: 3}
     - time: 0.6666667
       value: {fileID: 21300000, guid: 2293b5ab00317d84fbc0a9be264fa07e, type: 3}
     attribute: m_Sprite
-    path: quaygiaodoan/sprite
+    path: sprite
     classID: 212
     script: {fileID: 0}
     flags: 2
@@ -39,7 +39,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 793578615
+      path: 891129758
       attribute: 0
       script: {fileID: 0}
       typeID: 212
